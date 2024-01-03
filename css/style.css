@@ -340,7 +340,9 @@ main {
     url(../images/Dark-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: 50% 50%;
+  max-width: 320px;
+  margin: auto;
 }
 @media screen and (min-width: 768px) {
   .hero {
@@ -349,6 +351,7 @@ main {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/Dark-bgt.jpg);
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
@@ -376,6 +379,7 @@ main {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/people-office.jpg);
+    max-width: 1158px;
   }
 }
 @media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
@@ -484,6 +488,7 @@ main {
     column-gap: 24px;
     row-gap: 72px;
     justify-content: center;
+    align-items: center;
   }
   .features-item {
     flex-basis: calc((100% - 24px) / 2);
@@ -535,6 +540,7 @@ main {
   flex-direction: column;
   justify-content: center;
   gap: 72px;
+  align-items: center;
 }
 @media screen and (min-width: 768px) {
   .team-list {
@@ -628,6 +634,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 48px;
 }
 
