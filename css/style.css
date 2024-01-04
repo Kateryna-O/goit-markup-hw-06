@@ -13,6 +13,7 @@ button:active {
   background-color: #404bbf;
 }
 img {
+  width: 100%;
   display: block;
 }
 /*Default values*/
@@ -160,6 +161,7 @@ p {
   line-height: 1.5;
   letter-spacing: 0.02em;
   padding: 24px 0;
+  display: block;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-link:active {
@@ -211,10 +213,16 @@ p {
   margin-right: 0;
 }
 .contact-link {
+  font-size: 12px;
   color: #434455;
   line-height: 1.5;
   letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1158px) {
+  .contact-link {
+    font-size: 16px;
+  }
 }
 .contact-link:hover,
 .contact-link:focus {
@@ -330,6 +338,9 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  padding-top: 72px;
+  padding-bottom: 72px;
 }
 .hero {
   background-color: #2e2f42;
@@ -341,7 +352,7 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
-  max-width: 320px;
+  width: 100%;
   margin: auto;
 }
 @media screen and (min-width: 768px) {
@@ -351,7 +362,6 @@ main {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/Dark-bgt.jpg);
-    max-width: 768px;
   }
 }
 @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
@@ -379,7 +389,6 @@ main {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/people-office.jpg);
-    max-width: 1158px;
   }
 }
 @media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
@@ -399,7 +408,9 @@ main {
   line-height: 1.11; /* 111.111% */
   letter-spacing: 0.02em;
   max-width: 200px;
-  margin: 72px 16px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 72px;
 }
 .hero-btn {
   font-family: "Roboto", sans-serif;
@@ -415,7 +426,7 @@ main {
   min-width: 169px;
   height: 56px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin-bottom: 72px;
+  margin: 0 auto;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -426,10 +437,12 @@ main {
   .hero-title {
     max-width: 496px;
     font-size: 56px;
+    margin-bottom: 36px;
     line-height: 1.07; /* 107.143% */
   }
-  .hero-btn {
-    margin-bottom: 112px;
+  .hero-container {
+    padding-top: 112px;
+    padding-bottom: 122px;
   }
 }
 
@@ -437,8 +450,9 @@ main {
   .hero-title {
     margin-bottom: 48px;
   }
-  .hero-btn {
-    margin-bottom: 188px;
+  .hero-container {
+    padding-top: 188px;
+    padding-bottom: 188px;
   }
 }
 
@@ -740,7 +754,6 @@ main {
   }
 }
 .footer-discription {
-  margin-bottom: 72px;
 }
 .footer-logo {
   color: #4d5ae5;
@@ -749,6 +762,7 @@ main {
   font-weight: 700;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
   margin-bottom: 16px;
 }
 
@@ -760,6 +774,7 @@ main {
   line-height: 1.5; /* 150% */
   letter-spacing: 0.02em;
   text-align: left;
+  margin-top: 16px;
 }
 .footer-social-icon {
   display: inline-block;
@@ -835,6 +850,7 @@ main {
   background-color: transparent;
 }
 .sub-email::placeholder {
+  padding-left: 16px;
   color: #fff;
 }
 .sub-btn {
